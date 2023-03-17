@@ -1,0 +1,22 @@
+/* money-container */
+.wallet {
+    box-sizing: border-box;
+    padding : 6px 10px 6px 10px;
+    border-radius: 5px;
+    background-color: #EAE8FE;
+    font-size: 14px;
+    width: 306px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wallet p {
+    height: 20px;
+    line-height: 21px;
+}
+
+.wallet-money{
+    font-weight: bold;
+}

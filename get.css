@@ -1,0 +1,53 @@
+/* get style */
+
+
+.get-text{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.get-list{
+    box-sizing: border-box;
+    height: 364px;
+    background-color: #EAE8FE;
+    overflow-y: scroll;
+
+    padding: 12px 12px 18px 12px;
+}
+
+.get-list-item{
+    background-image: url(./img/can.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 33px;
+    background-position: 10px 6px;
+    background-color: white;
+
+    box-sizing: border-box;
+    padding: 8px 8px 8px 38px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 276px;
+    margin-bottom: 6px;
+}
+
+.get-list-item-name{
+    font-size: 9px;
+    align-self: center;
+}
+
+.get-list-item-num{
+    font-size: 14px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 6px 11px 5px 11px
+}
+
+.total-price {
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: right;
+}
