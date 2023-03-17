@@ -14,6 +14,9 @@
     overflow-y: scroll;
 
     padding: 12px 12px 18px 12px;
+
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
 }
 
 .get-list-item{
