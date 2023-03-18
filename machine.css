@@ -40,7 +40,7 @@
     height: 130px;
 
     border-radius: 10px;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    box-shadow : 0px 0px 4px rgba(0, 0, 0, 0.5);
     border: 0px;
 }
 
@@ -65,12 +65,11 @@
 
     background-color: #6327FE;
     border-radius: 50px;
-}
 
-.item-price {
-    margin-top : 5px ;
-    margin-bottom: 5px;
-    line-height: 22px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -81,11 +80,16 @@
     margin-top: 20px;
 
     display: grid;
-    grid-template-columns: 200px 94px;
+
     grid-template-rows: 32px 32px 106px;
     gap:12px;
 }
 
+.status form[name ^= "status"]{
+    display: grid;
+    grid-template-columns: 200px 94px;
+    gap: 12px;
+}
 
 /* btn */
 
@@ -93,14 +97,13 @@
     width: 94px;
     height: 32px;
     background-color: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.5);    
     border-radius: 5px;
     /* align-self: flex-end; */
 }
 
 .btn:active{
-    box-shadow: none;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn-text{
@@ -116,21 +119,20 @@
     background: #6327FE;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-}
 
-.btn-get-text{
     font-weight: 700;
     font-size: 13px;
     color: #FFFFFF;
 }
+
 .btn-get:active{
     background: #EB5757;
 }
 
 
-/* input price */
+/* input money */
 
-.status-price{
+.money-box{
     box-sizing: border-box;
     padding : 6px 10px 6px 10px;
     border-radius: 5px;
@@ -142,21 +144,44 @@
     align-items: center;
 }
 
-.status-list{
-    height: 106px;
-}
-
-input{
-    height: 32px;
-}
-
 
 /* input */
 
-/* status-list */
-
-.status-list {
-    background: #EAE8FE;
+#in {
+    box-sizing: border-box;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
+    padding-left: 6px;
+}
+
+/* status-list */
+
+
+.get-list{
+    box-sizing: border-box;
+    background-color: #EAE8FE;
+    overflow-y: scroll;
+
+    padding: 12px 12px 18px 12px;
+
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+.get-list-item{
+    background-image: url(./img/can.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 33px;
+    background-position: 10px 6px;
+    background-color: white;
+
+    box-sizing: border-box;
+    padding: 8px 8px 8px 38px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+
+
+    margin-bottom: 6px;
 }

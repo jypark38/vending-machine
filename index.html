@@ -36,19 +36,33 @@
                 </ul>
 
                 <div class="status">
-                    <div class="status-price">
-                        <p class="text">잔액 :</p>
-                        <p class="price">1,000 원</p>
-                    </div>
 
-                    <input type="button" class="btn" value="거스름돈 반환">
-                    <input type="text">
+                    <form name="status-money" >
+                        <div class="money-box">
+                            <p class="text">잔액 :</p>
+                            <p class="money">1,000 원</p>
+                        </div>
+                        <input type="button" class="btn" value="거스름돈 반환">
+                    </form>
 
-                    <input type="button" class="btn" value="입금">
 
-                    <div class="status-list">5</div>
+                    <form name="status-in">
+                        <label for="in" class="a11y-hidden">입금액 입력</label>
+                        <input type="text" id="in" placeholder="입금액 입력">
+                        <input type="button" class="btn" value="입금">
+                    </form >
 
-                    <input type="button" class="btn-get" value="획득">
+
+                    <form name="status-get">
+                        <ul class="get-list">
+                            <li class="get-list-item">
+                                <p class="get-list-item-name">Original_Cola</p>
+                                <p class="get-list-item-num">1</p>
+                            </li>
+                        </ul>
+                        <input type="button" class="btn-get" value="획득">
+                    </form>
+
                 </div >
             </div>
             <div class="money-container">
@@ -59,53 +73,16 @@
             </div>
             <div class="get-container">
                 <h2 class="get-text">획득한 음료</h2>
-                <div class="get-list">
-                    <div class="get-list-item">
+                <ul class="get-list">
+                    <li class="get-list-item">
                         <p class="get-list-item-name">Original_Cola</p>
                         <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                    <div class="get-list-item">
-                        <p class="get-list-item-name">Original_Cola</p>
-                        <p class="get-list-item-num">1</p>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 <p class="total-price">총금액 : 9,000 원</p>
             </div>
         </div >
     </div >
-
     
 </body>
 </html>
