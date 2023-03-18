@@ -10,11 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.wallet p {
-    height: 20px;
-    line-height: 21px;
+    margin: 1px 0;
 }
 
 .wallet .price{

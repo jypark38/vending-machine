@@ -28,6 +28,7 @@
 }
 
 .item {
+    position: relative;
     padding: 82px 11px 9px 13px;
     background-color: white; 
 
@@ -46,19 +47,42 @@
 
 .item:active{
     box-shadow: 0px 0px 0px 3px #6327FE;
-    filter: none;
 
 }
+
+.item:disabled{
+    box-shadow: none;
+    font-weight: 500;
+    color: black;
+}
+
+.item:disabled::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    
+    background-color:  rgba(0, 0, 0, 0.8);
+    background-image: url(img/soldout.svg);
+    background-repeat: no-repeat;
+    background-position: center 45px;
+}
+
 
 .item-title{
     font-size:9px; 
     text-align: center;
+    color: #333333;
+
 }
 
-.item-price-box{
-    width: 70px;
-    height: 22px;
-    margin-top: 7px;
+.item-price{
+    padding: 4px 1px;
+    margin-top: 5px;
     font-size:12px;
 
     color: white;
@@ -94,8 +118,6 @@
 /* btn */
 
 .btn{
-    width: 94px;
-    height: 32px;
     background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.5);    
     border-radius: 5px;
@@ -111,11 +133,6 @@
 }
 
 .btn-get{
-    width: 94px;
-    height: 106px;
-    left: 239px;
-    bottom: 28px;
-
     background: #6327FE;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
@@ -137,7 +154,6 @@
     padding : 6px 10px 6px 10px;
     border-radius: 5px;
     background-color: #EAE8FE;
-    height: 32px;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -169,7 +185,6 @@
 }
 
 .get-list-item{
-    background-image: url(./img/can.svg);
     background-repeat: no-repeat;
     background-size: 18px 33px;
     background-position: 10px 6px;
@@ -184,4 +199,24 @@
 
 
     margin-bottom: 6px;
+}
+
+
+.original{
+    background-image: url(./img/can.svg);
+}
+.green{
+    background-image: url(./img/green.svg);
+}
+.cool{
+    background-image: url(./img/cool.svg);
+}
+.yellow{
+    background-image: url(./img/yellow.svg);
+}
+.violet{
+    background-image: url(./img/violet.svg);
+}
+.orange{
+    background-image: url(./img/orange.svg);
 }
