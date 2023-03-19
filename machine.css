@@ -176,9 +176,10 @@
 .get-list{
     box-sizing: border-box;
     background-color: #EAE8FE;
+    
     overflow-y: scroll;
 
-    padding: 12px 12px 18px 12px;
+    padding: 12px 6px 12px 12px;
 
     border: 1px solid #BDBDBD;
     border-radius: 5px;
@@ -200,7 +201,6 @@
 
     margin-bottom: 6px;
 }
-
 
 .original{
     background-image: url(./img/can.svg);
