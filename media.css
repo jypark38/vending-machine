@@ -32,4 +32,12 @@
     .get-container{
         padding-top: 0px;
     }
+
+    #in{
+        text-indent: 65%;
+    }
+
+    #in:focus{
+        text-indent: 0;
+    }
 }
