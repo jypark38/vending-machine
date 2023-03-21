@@ -37,12 +37,14 @@
     background-size: 36px 65px;
     background-repeat: no-repeat;
 
-    width: 94px;
+    width: 100%;
     height: 130px;
 
     border-radius: 10px;
     box-shadow : 0px 0px 4px rgba(0, 0, 0, 0.5);
     border: 0px;
+
+    font-weight: 500;
 }
 
 .item:active{
@@ -66,6 +68,7 @@
     border-radius: 10px;
     
     background-color:  rgba(0, 0, 0, 0.8);
+    /* 이미지말고 텍스트로 만드는게 좋다 */
     background-image: url(img/soldout.svg);
     background-repeat: no-repeat;
     background-position: center 45px;
@@ -110,8 +113,8 @@
 
 .status form[name ^= "status"]{
     display: grid;
-    grid-template-columns: 200px 94px;
     gap: 12px;
+    grid-template-columns: 200px 94px;
 }
 
 /* btn */
